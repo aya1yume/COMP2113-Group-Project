@@ -1,0 +1,30 @@
+CXX = g++
+CXXFLAGS = -std=c++14 -Wall -g
+TARGET = gomoku.exe
+OBJS = main.o Game.o Board.o Player.o AIPlayer.o SaveSystem.o
+
+$(TARGET): $(OBJS)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
+
+main.o: main.cpp Game.h
+	$(CXX) $(CXXFLAGS) -c main.cpp
+
+Game.o: Game.cpp Game.h Board.h Player.h AIPlayer.h SaveSystem.h
+	$(CXX) $(CXXFLAGS) -c Game.cpp
+
+Board.o: Board.cpp Board.h
+	$(CXX) $(CXXFLAGS) -c Board.cpp
+
+Player.o: Player.cpp Player.h
+	$(CXX) $(CXXFLAGS) -c Player.cpp
+
+AIPlayer.o: AIPlayer.cpp AIPlayer.h Player.h
+	$(CXX) $(CXXFLAGS) -c AIPlayer.cpp
+
+SaveSystem.o: SaveSystem.cpp SaveSystem.h
+	$(CXX) $(CXXFLAGS) -c SaveSystem.cpp
+
+clean:
+	del -f $(OBJS) $(TARGET)
+
+.PHONY: clean
