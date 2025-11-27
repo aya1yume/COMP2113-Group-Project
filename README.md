@@ -1,12 +1,15 @@
-Five-in-a Row Game
+# COMP2113-Group-Project
+HKU COMP2113 2025-26 Sem1 Group Project
+Five-in-a-Row Game
 Team Members
-[Your Name] (Single developer)
+Liu Yuxuan 3036445464
+Chen Yu Wai 3036391900
 
-Application Description
+# Application Description
 Five-in-a-Row is a text-based console game implemented in C++ where players compete to connect five stones in a row horizontally, vertically, or diagonally. The game features human vs AI gameplay with multiple difficulty levels, save/load functionality, and an intuitive command-based interface.
 
-Features Implemented
-Core Gameplay
+# Features Implemented
+## Core Gameplay
 Human vs AI Gameplay: Play against a computer opponent with three difficulty levels
 
 15×15 Game Board: Standard Five-in-a-Row board size with hexadecimal coordinate system (0-9, A-E)
@@ -100,13 +103,11 @@ C++ compiler with C++14 support (g++ recommended)
 Make utility (for using Makefile)
 
 Compilation
-Using Makefile (recommended):
-
 bash
+# Using Makefile (recommended)
 make
-Manual compilation:
 
-bash
+# Or manual compilation
 g++ -std=c++14 main.cpp Game.cpp Board.cpp Player.cpp AIPlayer.cpp SaveSystem.cpp -o five_in_a_row
 Execution
 bash
