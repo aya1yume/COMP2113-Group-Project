@@ -1,6 +1,6 @@
 CXX = g++
 CXXFLAGS = -std=c++14 -Wall -g
-TARGET = gomoku.exe
+TARGET = five_in_a_row.exe
 OBJS = main.o Game.o Board.o Player.o AIPlayer.o SaveSystem.o
 
 $(TARGET): $(OBJS)
@@ -26,5 +26,6 @@ SaveSystem.o: SaveSystem.cpp SaveSystem.h
 
 clean:
 	del -f $(OBJS) $(TARGET)
+
 
 .PHONY: clean
