@@ -12,6 +12,19 @@ Team Members:
 # Application Description
 Five-in-a-Row is a text-based console game implemented in C++ where players compete to connect five stones in a row horizontally, vertically, or diagonally. The game features human vs AI gameplay with multiple difficulty levels, save/load functionality, and an intuitive command-based interface.
 
+# Video Demonstration
+A 3-minute demonstration video is available at  https://youtu.be/qF-Viqfddp8  showing:
+
+· Game startup and menu navigation
+
+· Gameplay at different difficulty levels
+
+· Save/load functionality
+
+· Undo feature
+
+· Win condition detection
+
 # Features Implemented
 ## 1.Core Gameplay
 · Human vs AI Gameplay: Play against a computer opponent with three difficulty levels
@@ -173,17 +186,5 @@ five_in_a_row/
 
 └── README.md
 
-# Video Demonstration
-A 3-minute demonstration video is available at    showing:
-
-· Game startup and menu navigation
-
-· Gameplay at different difficulty levels
-
-· Save/load functionality
-
-· Undo feature
-
-· Win condition detection
 
 *This project was developed for COMP2113 Course Project (2025-2026) 1st Semester*
